@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="50dip"
+  >
+  <ImageView
+  	android:id="@+id/normal_bg"
+  	android:layout_width="fill_parent"
+  	android:layout_height="50dip"
+  	android:scaleType="fitXY"
+  	android:layout_centerInParent="true"
+  	/>
+  
+  <ImageView
+  	android:id="@+id/checkbox_image"
+  	android:layout_width="25dip"
+  	android:layout_height="25dip"
+  	android:scaleType="fitXY"
+  	android:layout_alignParentLeft="true"
+  	android:layout_marginLeft="10dip"
+  	android:layout_marginRight="10dip"
+  	android:src="@drawable/catagory_blankcheckbox"
+  	android:layout_centerVertical="true"
+  	android:visibility="visible"/>
+  <TextView
+  	android:id="@+id/categoryListingText"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:textStyle="normal"
+  	android:textSize="16sp"
+  	android:textColor="#FF000000"
+  	android:layout_centerVertical="true"
+  	android:layout_toRightOf="@id/checkbox_image">
+  </TextView>
+  <ImageView
+  	android:id="@+id/lock_image"
+  	android:layout_width="35dip"
+  	android:layout_height="35dip"
+  	android:scaleType="fitXY"
+  	android:layout_alignParentRight="true"
+  	android:layout_centerVertical="true"
+  	android:layout_marginLeft="10dip"
+  	android:layout_marginRight="10dip"
+  	android:src="@drawable/lock"
+  	android:visibility="visible"/>
+  
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <TextView
+  	android:id="@+id/questionlabel"
+  	android:layout_alignParentTop="true"
+  	android:layout_alignParentLeft="true"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="Question "
+  	android:textStyle="bold"
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/questionCounter"
+  	android:layout_alignParentTop="true"
+  	android:layout_toRightOf="@+id/questionlabel"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text=""
+  	android:textStyle="bold"
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/questionColom"
+  	android:layout_alignParentTop="true"
+  	android:layout_toRightOf="@+id/questionCounter"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text=": "
+  	android:textStyle="bold"
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/questiontext"
+  	android:layout_alignParentTop="true"
+  	android:layout_toRightOf="@+id/questionColom"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"  	
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/usersAnswerlabel"
+  	android:layout_below="@+id/questiontext"
+  	android:layout_alignParentLeft="true"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="Your Answer: "
+  	android:textStyle="bold"
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/usersanswer"
+  	android:layout_below="@+id/questiontext"
+  	android:layout_toRightOf="@+id/usersAnswerlabel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/realAnswerlabel"
+  	android:layout_below="@+id/usersanswer"
+  	android:layout_alignParentLeft="true"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="Correct Answer: "
+  	android:textStyle="bold"
+  	android:textColor="#FF000000"
+  />
+  <TextView
+  	android:id="@+id/realanswer"
+  	android:layout_below="@+id/usersanswer"
+  	android:layout_toRightOf="@+id/realAnswerlabel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:textColor="#FF000000"
+  />
+</RelativeLayout>

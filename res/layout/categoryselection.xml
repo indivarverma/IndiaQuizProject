@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pj="http://schemas.android.com/apk/res/com.appworldonline.android.indiaquiz"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFFFFFFF">
+  <RelativeLayout
+  	android:id="@+id/footercontrol"
+  	android:layout_width="fill_parent"
+  	android:layout_height="65dip"
+  	android:layout_alignParentBottom="true">
+  	<ImageView
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:scaleType="fitXY"
+  		android:src="@drawable/footer">
+  	</ImageView>
+  	
+  	<com.appworldonline.android.indiaquiz.uicomponents.CustomImageButton
+  		android:id="@+id/refreshbutton"
+  		android:layout_width="45dip"
+  		android:layout_height="45dip"
+  		pj:res_normal="@drawable/refresh"
+  		pj:res_selected="@drawable/refresh"
+  		android:layout_centerInParent="true"/>
+  	<com.appworldonline.android.indiaquiz.uicomponents.CustomImageButton
+	  android:id="@+id/addFavoriteControl"
+	  android:layout_width="45dip"
+	  android:layout_height="45dip"
+	  pj:res_normal="@drawable/addicon"
+      pj:res_selected="@drawable/addicon_selected"
+      android:layout_centerInParent="true"
+  	/>
+  </RelativeLayout>
+  
+  <com.appworldonline.android.indiaquiz.uicomponents.TwoWayTabControl 
+  android:id="@+id/tabcontrol"
+  android:layout_width="320dip"
+  android:layout_height="44dip"
+  pj:leftItemSelected="@drawable/header_catagories"
+  pj:rightItemSelected="@drawable/header_favourites"
+  pj:leftLabel="Category"
+  pj:rightLabel="Favorites"
+  android:layout_alignParentTop="true"/>
+  
+  <RelativeLayout
+  	android:id="@+id/hintArea"
+  	android:layout_width="fill_parent"
+	android:layout_height="52dip"
+	android:layout_below="@id/tabcontrol"
+	android:layout_centerHorizontal="true">
+	  <ImageView
+	  	
+		android:src="@drawable/scoreboard"
+		android:layout_width="320dip"
+		android:layout_height="52dip"
+		android:layout_centerInParent="true"
+		android:scaleType="fitXY"
+	  />
+	  <TextView
+	  	android:id="@+id/hinttext"
+	  	android:layout_centerInParent="true"
+	  	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textStyle="italic"
+	  	android:textSize="14sp"
+	  	android:textColor="#FF000000"
+	  	android:text="(Choose from the list below to start Quiz.)">
+	  </TextView>
+  
+  </RelativeLayout>
+  <ImageView
+  	android:src="@drawable/shaddow_lowerr"
+  	android:layout_width="fill_parent"
+  	android:layout_height="5dip"
+  	android:scaleType="fitXY"
+  	android:layout_above="@id/footercontrol"
+  	/>
+  	<ImageView
+  	android:src="@drawable/shaddow_upper"
+  	android:layout_width="fill_parent"
+  	android:layout_height="5dip"
+  	android:scaleType="fitXY"
+  	android:layout_below="@id/hintArea"
+  	/>
+  <ListView
+  	android:id="@+id/categoriesList"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_below="@id/hintArea"
+  	android:layout_above="@id/footercontrol"
+  	android:divider="@drawable/dotted_line"
+  	android:dividerHeight="1dip"
+  	android:listSelector="@drawable/catagory_mag"
+  	android:cacheColorHint="#00000000"
+  	android:focusable="true"
+  	android:focusableInTouchMode="true"
+  />
+  <ListView
+  	android:id="@+id/favoritesList"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_below="@id/hintArea"
+  	android:layout_above="@id/footercontrol"
+  	android:dividerHeight="1dip"
+  	android:divider="@drawable/dotted_line"
+  	android:listSelector="@drawable/favorite_mag"
+  	android:cacheColorHint="#00000000"
+  	android:focusable="true"
+  	android:focusableInTouchMode="true"
+  />
+  
+  
+  
+  
+  
+</RelativeLayout>

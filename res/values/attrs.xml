@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<declare-styleable name="TwoWayTabControlStyle">
+<attr name="leftItemSelected" format="string"/>
+<attr name="rightItemSelected" format="string"/>
+<attr name="leftLabel" format="string"></attr>
+<attr name="rightLabel" format="string"></attr>
+</declare-styleable>
+<declare-styleable name="CustomImageButton">
+<attr name="res_normal" format="integer"/>
+<attr name="res_selected" format="integer"/>
+</declare-styleable>
+</resources>
